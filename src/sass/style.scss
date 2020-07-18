@@ -1,0 +1,45 @@
+.chips {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    min-height: 58px;
+    line-height: 58px;
+    border-bottom: solid 1px #424242;
+
+    &__chip {
+        margin: 13px 10px 14px 0px;
+    }
+
+    &__link {
+        border-radius: 19px;
+        line-height: 29px;
+        display: block;
+        padding: 0px 20px;
+        background: #424242;
+        color: #fff !important;
+        text-decoration: none;
+        border: 1px solid #757575;
+        transition: background-color 0.5s cubic-bezier(0.05, 0.0, 0.0, 1);
+
+        .mdi {
+            height: 19px;
+        }
+
+        &:hover {
+            background-color: #757575;
+        }
+
+        &.current {
+            border: 1px solid #E86546;
+            background-color: #E86546;
+        }
+
+    }
+
+} 
+
+@media (max-width: 1024px) {
+    .chips {
+        padding: 0px 10px;
+    }
+}
